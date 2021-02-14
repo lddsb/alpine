@@ -1,8 +1,9 @@
 name: Auto Publish To DockerHub
 
 on:
-  release:
-    types: [published, edited]
+  push:
+    branches:
+      - main
 
 jobs:
   latest:
